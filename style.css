@@ -612,6 +612,8 @@ input, select, textarea { font-family: inherit; }
   border-radius: var(--radius);
   padding: clamp(24px, 3vw, 40px);
   border: 1px solid var(--c-border);
+  display: flex;
+  flex-direction: column;
 }
 .review-card__stars { color: var(--c-taupe); font-size: 18px; margin-bottom: 16px; letter-spacing: 2px; }
 .review-card__text {
@@ -623,7 +625,7 @@ input, select, textarea { font-family: inherit; }
   font-style: italic;
   margin-bottom: 24px;
 }
-.review-card__author { display: flex; align-items: center; gap: 12px; }
+.review-card__author { display: flex; align-items: center; gap: 12px; margin-top: auto; }
 .review-card__avatar {
   width: 42px; height: 42px;
   border-radius: 50%;
