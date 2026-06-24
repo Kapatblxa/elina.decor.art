@@ -1,130 +1,90 @@
-/* ─── HEADER SCROLL ─── */
+/* ═══ HEADER solid on scroll ═══ */
 const header = document.getElementById('header');
-window.addEventListener('scroll', () => {
-  header.classList.toggle('scrolled', window.scrollY > 40);
-}, { passive: true });
+const onScroll = () => header.classList.toggle('is-solid', window.scrollY > 60);
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
 
-/* ─── BURGER MENU ─── */
+/* ═══ BURGER ═══ */
 const burger = document.getElementById('burger');
 const nav = document.getElementById('nav');
 burger.addEventListener('click', () => {
-  const open = nav.classList.toggle('open');
-  burger.setAttribute('aria-expanded', open);
+  const open = nav.classList.toggle('is-open');
   document.body.style.overflow = open ? 'hidden' : '';
 });
-document.querySelectorAll('.nav__link').forEach(link => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('open');
-    document.body.style.overflow = '';
-  });
-});
+nav.querySelectorAll('.nav__link').forEach(l =>
+  l.addEventListener('click', () => { nav.classList.remove('is-open'); document.body.style.overflow = ''; })
+);
 
-/* ─── PROJECT FILTER ─── */
-const filterBtns = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
-filterBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    filterBtns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const filter = btn.dataset.filter;
-    projectCards.forEach(card => {
-      const show = filter === 'all' || card.dataset.category === filter;
-      card.classList.toggle('hidden', !show);
-    });
+/* ═══ WORKS filter ═══ */
+const fbtns = document.querySelectorAll('.fbtn');
+const witems = document.querySelectorAll('.witem');
+fbtns.forEach(btn => btn.addEventListener('click', () => {
+  fbtns.forEach(b => b.classList.remove('is-active'));
+  btn.classList.add('is-active');
+  const f = btn.dataset.filter;
+  witems.forEach(it => {
+    const show = f === 'all' || it.dataset.category === f;
+    it.classList.toggle('witem--hidden', !show);
   });
-});
+}));
 
-/* ─── REVIEWS SLIDER ─── */
+/* ═══ QUOTE slider ═══ */
 (function () {
-  const track = document.getElementById('reviewsTrack');
-  const dotsWrap = document.getElementById('reviewsDots');
-  const prevBtn = document.getElementById('reviewsPrev');
-  const nextBtn = document.getElementById('reviewsNext');
-  if (!track) return;
+  const root = document.getElementById('quote');
+  if (!root) return;
+  const slides = [...root.querySelectorAll('.quote__slide')];
+  const dotsWrap = document.getElementById('qDots');
+  const prev = document.getElementById('qPrev');
+  const next = document.getElementById('qNext');
+  let i = 0, timer;
 
-  const cards = track.querySelectorAll('.review-card');
-  const perView = () => window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 3;
-  let current = 0;
-  let pv = perView();
-  let total = Math.ceil(cards.length / pv);
-  let autoTimer;
-
-  function buildDots() {
-    pv = perView();
-    total = Math.ceil(cards.length / pv);
-    dotsWrap.innerHTML = '';
-    for (let i = 0; i < total; i++) {
-      const d = document.createElement('button');
-      d.className = 'reviews__dot' + (i === current ? ' active' : '');
-      d.setAttribute('aria-label', `Слайд ${i + 1}`);
-      d.addEventListener('click', () => goTo(i));
-      dotsWrap.appendChild(d);
-    }
-  }
-
-  function goTo(idx) {
-    current = (idx + total) % total;
-    const cardWidth = cards[0].getBoundingClientRect().width;
-    const gap = 24;
-    track.style.transform = `translateX(-${current * (cardWidth + gap) * pv}px)`;
-    dotsWrap.querySelectorAll('.reviews__dot').forEach((d, i) => {
-      d.classList.toggle('active', i === current);
-    });
-  }
-
-  prevBtn.addEventListener('click', () => { goTo(current - 1); resetAuto(); });
-  nextBtn.addEventListener('click', () => { goTo(current + 1); resetAuto(); });
-
-  function resetAuto() {
-    clearInterval(autoTimer);
-    autoTimer = setInterval(() => goTo(current + 1), 5000);
-  }
-
-  window.addEventListener('resize', () => {
-    current = 0;
-    buildDots();
-    goTo(0);
+  slides.forEach((_, idx) => {
+    const d = document.createElement('button');
+    d.className = 'quote__dot' + (idx === 0 ? ' is-active' : '');
+    d.setAttribute('aria-label', `Відгук ${idx + 1}`);
+    d.addEventListener('click', () => { go(idx); restart(); });
+    dotsWrap.appendChild(d);
   });
+  const dots = [...dotsWrap.children];
 
-  buildDots();
-  resetAuto();
+  function go(n) {
+    i = (n + slides.length) % slides.length;
+    slides.forEach((s, idx) => s.classList.toggle('is-active', idx === i));
+    dots.forEach((d, idx) => d.classList.toggle('is-active', idx === i));
+  }
+  function restart() { clearInterval(timer); timer = setInterval(() => go(i + 1), 6000); }
+
+  prev.addEventListener('click', () => { go(i - 1); restart(); });
+  next.addEventListener('click', () => { go(i + 1); restart(); });
+  restart();
 })();
 
-/* ─── CONTACT FORM ─── */
+/* ═══ CONTACT form ═══ */
 const form = document.getElementById('contactForm');
-const formSuccess = document.getElementById('formSuccess');
-if (form) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = form.querySelector('[type="submit"]');
-    btn.disabled = true;
-    btn.textContent = 'Надсилаємо…';
-    // Simulated submit — wire to backend/formspree/netlify later
-    setTimeout(() => {
-      form.querySelectorAll('input,select,textarea').forEach(el => el.value = '');
-      btn.disabled = false;
-      btn.textContent = 'Надіслати заявку';
-      formSuccess.classList.add('visible');
-      setTimeout(() => formSuccess.classList.remove('visible'), 6000);
-    }, 1200);
-  });
-}
+const success = document.getElementById('formSuccess');
+if (form) form.addEventListener('submit', e => {
+  e.preventDefault();
+  const btn = form.querySelector('.btn-line');
+  btn.disabled = true; btn.textContent = 'Надсилаємо…';
+  setTimeout(() => {
+    form.querySelectorAll('input,select,textarea').forEach(el => el.value = '');
+    btn.disabled = false; btn.textContent = 'Надіслати заявку';
+    success.classList.add('is-visible');
+    setTimeout(() => success.classList.remove('is-visible'), 6000);
+  }, 1100);
+});
 
-/* ─── FADE IN ON SCROLL ─── */
-const fadeEls = document.querySelectorAll(
-  '.section-header, .intro__text, .intro__visual, .service-item, .project-card, .review-card, .process__step, .cat-card'
+/* ═══ REVEAL on scroll ═══ */
+const revealEls = document.querySelectorAll(
+  '.manifesto__text, .manifesto__meta, .sec-head, .citem, .slist__item, .witem, .quote, .contact__info, .cform'
 );
 const io = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      io.unobserve(entry.target);
-    }
+  entries.forEach(en => {
+    if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); }
   });
-}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-fadeEls.forEach((el, i) => {
-  el.classList.add('fade-in');
-  el.style.transitionDelay = `${(i % 4) * 80}ms`;
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+revealEls.forEach((el, idx) => {
+  el.classList.add('reveal');
+  el.style.transitionDelay = `${(idx % 3) * 90}ms`;
   io.observe(el);
 });
