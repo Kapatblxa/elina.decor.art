@@ -375,11 +375,8 @@ input, select, textarea { font-family: inherit; }
 .categories__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
   gap: 16px;
 }
-.cat-card--large { grid-row: span 2; aspect-ratio: 3/4; }
-.cat-card--large-right { grid-row: span 2; aspect-ratio: 3/4; }
 
 .cat-card {
   position: relative;
@@ -388,7 +385,14 @@ input, select, textarea { font-family: inherit; }
   aspect-ratio: 3/4;
   cursor: pointer;
 }
-.cat-card--large { aspect-ratio: 16/9; }
+/* All collection cards share one uniform shape — no spans, no large variants */
+.cat-card--large,
+.cat-card--large-right,
+.cat-card--wide {
+  grid-row: auto;
+  grid-column: auto;
+  aspect-ratio: 3/4;
+}
 
 .cat-card__img-wrap {
   position: absolute;
@@ -811,8 +815,6 @@ input, select, textarea { font-family: inherit; }
 /* ─── RESPONSIVE ─── */
 @media (max-width: 1024px) {
   .categories__grid { grid-template-columns: repeat(2, 1fr); }
-  .cat-card--large { grid-column: span 1; }
-  .cat-card--large-right { grid-column: span 1; }
   .services__grid { grid-template-columns: repeat(2, 1fr); }
   .process__steps { flex-direction: column; }
   .process__connector { width: 80px; height: 1px; margin: 0 0 0 24px; }
@@ -837,7 +839,6 @@ input, select, textarea { font-family: inherit; }
 
   /* Categories */
   .categories__grid { grid-template-columns: 1fr; }
-  .cat-card--large { aspect-ratio: 16/9; }
 
   /* Services */
   .services__grid { grid-template-columns: 1fr; }
