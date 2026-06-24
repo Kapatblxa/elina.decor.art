@@ -603,6 +603,7 @@ input, select, textarea { font-family: inherit; }
 .reviews__track-wrap { overflow: hidden; }
 .reviews__track {
   display: flex;
+  align-items: stretch;
   gap: 24px;
   transition: transform 0.5s var(--ease);
 }
