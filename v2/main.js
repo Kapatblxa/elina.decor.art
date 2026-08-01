@@ -61,22 +61,3 @@ nav.querySelectorAll('a').forEach(a =>
   prev.addEventListener('click', () => rail.scrollBy({ left: -step(), behavior: 'smooth' }));
   next.addEventListener('click', () => rail.scrollBy({ left: step(), behavior: 'smooth' }));
 })();
-
-/* ══ CONTACT form ══ */
-(function () {
-  const form = document.getElementById('form');
-  const done = document.getElementById('formDone');
-  if (!form) return;
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const btn = form.querySelector('[type="submit"]');
-    btn.disabled = true;
-    btn.textContent = 'Надсилаємо…';
-    // Simulated submit — wire to a backend / Formspree / Netlify Forms later
-    setTimeout(() => {
-      form.classList.add('is-off');
-      done.classList.add('is-on');
-    }, 900);
-  });
-})();
