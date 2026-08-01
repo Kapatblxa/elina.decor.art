@@ -90,26 +90,6 @@ filterBtns.forEach(btn => {
   resetAuto();
 })();
 
-/* ─── CONTACT FORM ─── */
-const form = document.getElementById('contactForm');
-const formSuccess = document.getElementById('formSuccess');
-if (form) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = form.querySelector('[type="submit"]');
-    btn.disabled = true;
-    btn.textContent = 'Надсилаємо…';
-    // Simulated submit — wire to backend/formspree/netlify later
-    setTimeout(() => {
-      form.querySelectorAll('input,select,textarea').forEach(el => el.value = '');
-      btn.disabled = false;
-      btn.textContent = 'Надіслати заявку';
-      formSuccess.classList.add('visible');
-      setTimeout(() => formSuccess.classList.remove('visible'), 6000);
-    }, 1200);
-  });
-}
-
 /* ─── FADE IN ON SCROLL ─── */
 const fadeEls = document.querySelectorAll(
   '.section-header, .intro__text, .intro__visual, .service-item, .project-card, .review-card, .process__step, .cat-card'
