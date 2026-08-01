@@ -1,542 +1,377 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elina Decor Art — Авторське оформлення вікон у Києві</title>
-  <meta name="description" content="Авторське оформлення вікон. 20+ років досвіду. Карнизи, тканини, аксесуари, ролети. Власний цех у Києві, Осокорки." />
-  <meta name="keywords" content="штори Київ, карнизи, ролети, тканини, оформлення вікон, пошив штор, римські штори" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Elina Decor Art — Авторське оформлення вікон у Києві</title>
+<meta name="description" content="Авторське оформлення вікон. 20+ років досвіду. Карнизи, тканини, аксесуари, ролети. Власний цех у Києві, Осокорки." />
+<meta name="keywords" content="штори Київ, карнизи, ролети, тканини, оформлення вікон, пошив штор, римські штори" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+
+<!-- Canonical & icons -->
+<link rel="canonical" href="https://elinadecor.kyiv.ua/" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<meta name="theme-color" content="#f3f3f2" />
+<meta name="robots" content="index, follow" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="uk_UA" />
+<meta property="og:site_name" content="Elina Decor Art" />
+<meta property="og:url" content="https://elinadecor.kyiv.ua/" />
+<meta property="og:title" content="Elina Decor Art — Авторське оформлення вікон у Києві" />
+<meta property="og:description" content="Штори, римські штори, ролети, карнизи та авторський текстиль. Власний цех у Києві. 20+ років досвіду." />
+<meta property="og:image" content="https://elinadecor.kyiv.ua/hero.jpg" />
+<meta property="og:image:alt" content="Авторське оформлення вікон від Elina Decor Art" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Elina Decor Art — Авторське оформлення вікон у Києві" />
+<meta name="twitter:description" content="Штори, римські штори, ролети, карнизи та авторський текстиль. Власний цех у Києві. 20+ років досвіду." />
+<meta name="twitter:image" content="https://elinadecor.kyiv.ua/hero.jpg" />
+
+<!-- Local business structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeGoodsStore",
+  "name": "Elina Decor Art",
+  "description": "Авторське оформлення вікон: штори, римські штори, ролети, карнизи, тканини та авторський живопис. Власний цех у Києві.",
+  "url": "https://elinadecor.kyiv.ua/",
+  "image": "https://elinadecor.kyiv.ua/hero.jpg",
+  "telephone": "+380972483922",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "вул. Здолбунівська, 7г",
+    "addressLocality": "Київ",
+    "addressRegion": "Київська область",
+    "addressCountry": "UA"
+  },
+  "areaServed": { "@type": "City", "name": "Київ" },
+  "sameAs": ["https://www.instagram.com/elina.decor.art"],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  }],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Текстильне оформлення інтер'єру" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Пошив штор на власному виробництві" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Навішування штор і монтаж карнизів" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Підбір тканин і аксесуарів" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Зонування простору текстилем" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Авторські картини Texture Paintings" } }
+  ]
+}
+</script>
 </head>
 <body>
 
-<!-- ─── HEADER ─── -->
-<header class="header" id="header">
-  <div class="header__inner container">
-    <a href="#" class="logo">
-      <span class="logo__name">Elina Decor Art</span>
-      <span class="logo__tagline">Авторське оформлення вікон</span>
+<!-- ══ HEADER ══ -->
+<header class="hdr" id="hdr">
+  <div class="hdr__in">
+    <a href="#top" class="brand">
+      <span class="brand__name">Elina Decor Art</span>
+      <span class="brand__city">Київ</span>
     </a>
     <nav class="nav" id="nav">
-      <ul class="nav__list">
-        <li><a href="#categories" class="nav__link">Колекції</a></li>
-        <li><a href="#services" class="nav__link">Послуги</a></li>
-        <li><a href="#projects" class="nav__link">Проєкти</a></li>
-        <li><a href="#reviews" class="nav__link">Відгуки</a></li>
-        <li><a href="#contact" class="nav__link">Контакти</a></li>
-      </ul>
+      <a href="#about">Про нас</a>
+      <a href="#categories">Колекції</a>
+      <a href="#services">Послуги</a>
+      <a href="#projects">Проєкти</a>
+      <a href="#reviews">Відгуки</a>
     </nav>
-    <a href="https://www.instagram.com/elina.decor.art" target="_blank" rel="noopener" class="header__instagram">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
-      @elina.decor.art
-    </a>
-    <button class="burger" id="burger" aria-label="Меню">
-      <span></span><span></span><span></span>
-    </button>
+    <a href="#contact" class="btn btn--out hdr__cta">Консультація <span>→</span></a>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
   </div>
 </header>
 
-<!-- ─── HERO ─── -->
-<section class="hero" id="hero">
-  <div class="hero__bg">
-    <div class="hero__overlay"></div>
-    <img src="hero.jpg" alt="Елегантні штори" class="hero__img" id="heroImg" onerror="this.style.display='none'" />
-  </div>
-  <div class="hero__content container">
-    <p class="hero__eyebrow">20+ років у текстильному декорі</p>
-    <h1 class="hero__title">Простір,<br /><em>що надихає</em></h1>
-    <p class="hero__sub">Авторське оформлення вікон для вашого дому та бізнесу.<br />Власний цех · Шоурум в Осокорках · Київ</p>
-    <div class="hero__actions">
-      <a href="#categories" class="btn btn--primary">Переглянути колекції</a>
-      <a href="#contact" class="btn btn--ghost">Замовити консультацію</a>
+<!-- ══ HERO ══ -->
+<section id="top" class="hero">
+  <div class="shell">
+    <div class="hero__bar">
+      <span class="hero__badge"><i class="dot"></i>Авторське оформлення вікон</span>
+      <span class="hero__meta">20+ років у текстильному декорі</span>
     </div>
-  </div>
-  <div class="hero__scroll-hint">
-    <span>Гортайте вниз</span>
-    <div class="hero__scroll-line"></div>
-  </div>
-</section>
-
-<!-- ─── INTRO ─── -->
-<section class="intro section">
-  <div class="container intro__grid">
-    <div class="intro__text">
-      <span class="label">Про нас</span>
-      <h2 class="h2">Текстиль як мистецтво</h2>
-      <p>Elina Decor Art — це авторський підхід до кожного проєкту. Ми поєднуємо 20-річний досвід із сучасними тенденціями, щоб ваше вікно стало focal point інтер'єру.</p>
-      <p>Власний цех у Дарницькому районі дозволяє нам контролювати кожен шов — від підбору тканини до монтажу карниза.</p>
-      <ul class="intro__facts">
-        <li><strong>20+</strong><span>років досвіду</span></li>
-        <li><strong>200+</strong><span>реалізованих проєктів</span></li>
-        <li><strong>1</strong><span>власний цех</span></li>
-      </ul>
-    </div>
-    <div class="intro__visual">
-      <div class="intro__img-wrap">
-        <img src="about.jpg" alt="Наш шоурум" onerror="this.parentElement.classList.add('img-placeholder')" />
-        <div class="intro__badge">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
-          Авторська робота
-        </div>
+    <h1 class="hero__h1">Простір,<br /><em>що надихає</em></h1>
+    <div class="hero__grid">
+      <p class="hero__lead">
+        Штори, римські штори, ролети, карнизи та авторський текстиль для дому й бізнесу.
+        Власний цех у Києві — від підбору тканини до монтажу карниза кожен шов проходить через наші руки.
+      </p>
+      <div class="hero__acts">
+        <a href="#categories" class="btn btn--solid">Переглянути колекції</a>
+        <a href="#contact" class="btn btn--out">Замовити консультацію</a>
       </div>
     </div>
   </div>
+  <div class="hero__strip">
+    <img src="hero.jpg" alt="Елегантні штори у вітальні" />
+    <img src="cat-roman.jpg" alt="Римські штори" />
+    <img src="cat-fabric.jpg" alt="Тканини" />
+  </div>
 </section>
 
-<!-- ─── CATEGORIES ─── -->
-<section class="categories section section--sand" id="categories">
-  <div class="container">
-    <div class="section-header">
-      <span class="label">Каталог</span>
+<!-- ══ ABOUT ══ -->
+<section id="about" class="sec shell">
+  <div class="about__top">
+    <div>
+      <p class="kicker">Про нас</p>
+      <h2 class="h2">Текстиль<br />як мистецтво</h2>
+    </div>
+    <div class="about__body">
+      <p>Elina Decor Art — це авторський підхід до кожного проєкту. Ми поєднуємо 20-річний досвід із сучасними тенденціями, щоб ваше вікно стало смисловим центром інтер'єру.</p>
+      <p>Власний цех у Дарницькому районі дозволяє контролювати кожен етап — від підбору тканини до монтажу карниза.</p>
+      <div class="stats">
+        <div class="stat"><span class="stat__n">20+</span><span class="stat__c">років досвіду</span></div>
+        <div class="stat"><span class="stat__n">200+</span><span class="stat__c">проєктів</span></div>
+        <div class="stat"><span class="stat__n">1</span><span class="stat__c">власний цех</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="quote-block">
+    <img src="about.jpg" alt="Шоурум Elina Decor Art" />
+    <figure class="quote-block__txt">
+      <p class="kicker">Шоурум · Осокорки</p>
+      <blockquote>«Вікно — це рама, крізь яку дім дивиться на світ. Наша робота — зробити цю раму гідною».</blockquote>
+      <figcaption>Еліна, засновниця та дизайнерка</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ══ CATEGORIES ══ -->
+<section id="categories" class="sec shell">
+  <div class="sec__head">
+    <div>
+      <p class="kicker">Каталог</p>
       <h2 class="h2">Наші колекції</h2>
-      <p class="section-header__sub">Широкий асортимент для будь-якого стилю інтер'єру</p>
     </div>
-    <div class="categories__grid">
-
-      <!-- Col 1: tall card (row-span 2) -->
-      <article class="cat-card cat-card--large">
-        <div class="cat-card__img-wrap">
-          <img src="cat-shtory.jpg" alt="Штори" onerror="this.parentElement.classList.add('img-placeholder')" />
-          <div class="cat-card__overlay"></div>
-        </div>
-        <div class="cat-card__body">
-          <h3 class="cat-card__title">Штори</h3>
-          <p class="cat-card__sub">Тюль · Портьєри · Класика · Сучасний стиль</p>
-          <a href="#contact" class="cat-card__link">Замовити <span>→</span></a>
-        </div>
-      </article>
-
-      <!-- Col 2 row 1 -->
-      <article class="cat-card">
-        <div class="cat-card__img-wrap">
-          <img src="cat-roman.jpg" alt="Римські штори" onerror="this.parentElement.classList.add('img-placeholder')" />
-          <div class="cat-card__overlay"></div>
-        </div>
-        <div class="cat-card__body">
-          <h3 class="cat-card__title">Римські штори</h3>
-          <p class="cat-card__sub">Прованс · Лофт · Мінімалізм</p>
-          <a href="#contact" class="cat-card__link">Замовити <span>→</span></a>
-        </div>
-      </article>
-
-      <!-- Col 3: tall card (row-span 2) -->
-      <article class="cat-card cat-card--large-right">
-        <div class="cat-card__img-wrap">
-          <img src="cat-rolety.jpg" alt="Ролети" onerror="this.parentElement.classList.add('img-placeholder')" />
-          <div class="cat-card__overlay"></div>
-        </div>
-        <div class="cat-card__body">
-          <h3 class="cat-card__title">Ролети</h3>
-          <p class="cat-card__sub">Рулонні штори будь-якого формату</p>
-          <a href="#contact" class="cat-card__link">Замовити <span>→</span></a>
-        </div>
-      </article>
-
-      <!-- Col 2 row 2 -->
-      <article class="cat-card">
-        <div class="cat-card__img-wrap">
-          <img src="cat-fabric.jpg" alt="Тканини" onerror="this.parentElement.classList.add('img-placeholder')" />
-          <div class="cat-card__overlay"></div>
-        </div>
-        <div class="cat-card__body">
-          <h3 class="cat-card__title">Тканини</h3>
-          <p class="cat-card__sub">Принти · Шеніль · Блекаут · Натуральні · Дитячі</p>
-          <a href="#contact" class="cat-card__link">Замовити <span>→</span></a>
-        </div>
-      </article>
-
-      <!-- Row 3 full width — 2 cards -->
-      <article class="cat-card">
-        <div class="cat-card__img-wrap">
-          <img src="cat-karnyz.jpg" alt="Карнизи" onerror="this.parentElement.classList.add('img-placeholder')" />
-          <div class="cat-card__overlay"></div>
-        </div>
-        <div class="cat-card__body">
-          <h3 class="cat-card__title">Карнизи</h3>
-          <p class="cat-card__sub">SCARLAYN · TOP-LINE · Дерев'яні · Металеві</p>
-          <a href="#contact" class="cat-card__link">Замовити <span>→</span></a>
-        </div>
-      </article>
-
-      <article class="cat-card">
-        <div class="cat-card__img-wrap">
-          <img src="cat-paintings.jpg" alt="Картини" onerror="this.parentElement.classList.add('img-placeholder')" />
-          <div class="cat-card__overlay"></div>
-        </div>
-        <div class="cat-card__body">
-          <h3 class="cat-card__title">Картини</h3>
-          <p class="cat-card__sub">Авторський живопис · Texture paintings</p>
-          <a href="#contact" class="cat-card__link">Замовити <span>→</span></a>
-        </div>
-      </article>
-
-    </div>
+    <p class="sec__note">Шість напрямів — для будь-якого стилю інтер'єру, від класики до мінімалізму.</p>
+  </div>
+  <div class="cats">
+    <a href="#contact" class="cat">
+      <span class="cat__media"><img src="cat-shtory.jpg" alt="Штори" /></span>
+      <span class="cat__row"><h3>Штори</h3><span class="cat__n">01</span></span>
+      <p>Тюль · Портьєри · Класика · Сучасний стиль</p>
+    </a>
+    <a href="#contact" class="cat">
+      <span class="cat__media"><img src="cat-roman.jpg" alt="Римські штори" /></span>
+      <span class="cat__row"><h3>Римські штори</h3><span class="cat__n">02</span></span>
+      <p>Прованс · Лофт · Мінімалізм</p>
+    </a>
+    <a href="#contact" class="cat">
+      <span class="cat__media"><img src="cat-rolety.jpg" alt="Ролети" /></span>
+      <span class="cat__row"><h3>Ролети</h3><span class="cat__n">03</span></span>
+      <p>Рулонні штори будь-якого формату</p>
+    </a>
+    <a href="#contact" class="cat">
+      <span class="cat__media"><img src="cat-fabric.jpg" alt="Тканини" /></span>
+      <span class="cat__row"><h3>Тканини</h3><span class="cat__n">04</span></span>
+      <p>Принти · Шеніль · Блекаут · Натуральні · Дитячі</p>
+    </a>
+    <a href="#contact" class="cat">
+      <span class="cat__media"><img src="cat-karnyz.jpg" alt="Карнизи" /></span>
+      <span class="cat__row"><h3>Карнизи</h3><span class="cat__n">05</span></span>
+      <p>SCARLAYN · TOP-LINE · Дерев'яні · Металеві</p>
+    </a>
+    <a href="#contact" class="cat">
+      <span class="cat__media"><img src="cat-paintings.jpg" alt="Картини" /></span>
+      <span class="cat__row"><h3>Картини</h3><span class="cat__n">06</span></span>
+      <p>Авторський живопис · Texture paintings</p>
+    </a>
   </div>
 </section>
 
-<!-- ─── SERVICES ─── -->
-<section class="services section" id="services">
-  <div class="container">
-    <div class="section-header">
-      <span class="label">Що ми робимо</span>
+<!-- ══ SERVICES ══ -->
+<section id="services" class="sec shell">
+  <div class="svc">
+    <aside class="svc__aside">
+      <p class="kicker">Що ми робимо</p>
       <h2 class="h2">Послуги</h2>
-    </div>
-    <div class="services__grid">
-      <div class="service-item">
-        <div class="service-item__icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        </div>
-        <h3>Текстильне оформлення інтер'єру</h3>
-        <p>Квартири, будинки, кафе — комплексне рішення від задуму до реалізації</p>
-      </div>
-      <div class="service-item">
-        <div class="service-item__icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
-        </div>
-        <h3>Пошив штор на власному виробництві</h3>
-        <p>Контроль якості на кожному етапі — від кроєння до фінального пресування</p>
-      </div>
-      <div class="service-item">
-        <div class="service-item__icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><path d="M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
-        </div>
-        <h3>Навішування штор</h3>
-        <p>Професійний монтаж карнизів і штор із дотриманням усіх технічних норм</p>
-      </div>
-      <div class="service-item">
-        <div class="service-item__icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-        </div>
-        <h3>Підбір тканин і аксесуарів</h3>
-        <p>Індивідуальна консультація в шоурумі або на об'єкті замовника</p>
-      </div>
-      <div class="service-item">
-        <div class="service-item__icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-        </div>
-        <h3>Зонування простору текстилем</h3>
-        <p>Розумне використання штор і тканин для поділу простору без перегородок</p>
-      </div>
-      <div class="service-item">
-        <div class="service-item__icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <h3>Авторські картини Texture Paintings</h3>
-        <p>Унікальні живописні роботи для доповнення інтер'єру</p>
-      </div>
-    </div>
+      <p class="svc__note">Комплексне рішення від задуму до монтажу — або окрема послуга, якщо потрібна лише частина роботи.</p>
+    </aside>
+    <ol class="svc__list">
+      <li><span class="svc__n">01</span><div><h3>Текстильне оформлення інтер'єру</h3><p>Квартири, будинки, кафе — комплексне рішення від задуму до реалізації.</p></div></li>
+      <li><span class="svc__n">02</span><div><h3>Пошив штор на власному виробництві</h3><p>Контроль якості на кожному етапі — від кроєння до фінального пресування.</p></div></li>
+      <li><span class="svc__n">03</span><div><h3>Навішування штор і монтаж карнизів</h3><p>Професійний монтаж із дотриманням усіх технічних норм.</p></div></li>
+      <li><span class="svc__n">04</span><div><h3>Підбір тканин і аксесуарів</h3><p>Індивідуальна консультація в шоурумі або на об'єкті замовника.</p></div></li>
+      <li><span class="svc__n">05</span><div><h3>Зонування простору текстилем</h3><p>Розумне використання штор і тканин для поділу простору без перегородок.</p></div></li>
+      <li><span class="svc__n">06</span><div><h3>Авторські картини Texture Paintings</h3><p>Унікальні живописні роботи для доповнення інтер'єру.</p></div></li>
+    </ol>
   </div>
 </section>
 
-<!-- ─── PROCESS ─── -->
-<section class="process section section--dark">
-  <div class="container">
-    <div class="section-header section-header--light">
-      <span class="label label--light">Як ми працюємо</span>
-      <h2 class="h2 h2--light">Від ідеї до результату</h2>
+<!-- ══ PROCESS ══ -->
+<section class="sec shell">
+  <div class="sec__head sec__head--plain">
+    <div>
+      <p class="kicker">Як ми працюємо</p>
+      <h2 class="h2">Від ідеї до результату</h2>
     </div>
-    <div class="process__steps">
-      <div class="process__step">
-        <div class="process__num">01</div>
-        <h3>Консультація</h3>
-        <p>Обговорюємо ваші побажання, стиль інтер'єру та бюджет — в шоурумі або онлайн</p>
-      </div>
-      <div class="process__connector"></div>
-      <div class="process__step">
-        <div class="process__num">02</div>
-        <h3>Підбір матеріалів</h3>
-        <p>Підбираємо тканини, карнизи та аксесуари з урахуванням вашого стилю</p>
-      </div>
-      <div class="process__connector"></div>
-      <div class="process__step">
-        <div class="process__num">03</div>
-        <h3>Виробництво</h3>
-        <p>Шиємо на власному обладнанні з контролем якості на кожному етапі</p>
-      </div>
-      <div class="process__connector"></div>
-      <div class="process__step">
-        <div class="process__num">04</div>
-        <h3>Монтаж</h3>
-        <p>Встановлюємо карнизи та навішуємо штори — акуратно й точно в строк</p>
-      </div>
-    </div>
+  </div>
+  <div class="steps">
+    <div class="step"><span class="step__n">01</span><h3>Консультація</h3><p>Обговорюємо побажання, стиль інтер'єру та бюджет — у шоурумі або онлайн.</p></div>
+    <div class="step"><span class="step__n">02</span><h3>Підбір матеріалів</h3><p>Тканини, карнизи та аксесуари з урахуванням вашого стилю.</p></div>
+    <div class="step"><span class="step__n">03</span><h3>Виробництво</h3><p>Шиємо на власному обладнанні з контролем якості на кожному етапі.</p></div>
+    <div class="step"><span class="step__n">04</span><h3>Монтаж</h3><p>Встановлюємо карнизи та навішуємо штори — акуратно й точно в строк.</p></div>
   </div>
 </section>
 
-<!-- ─── PROJECTS ─── -->
-<section class="projects section section--sand" id="projects">
-  <div class="container">
-    <div class="section-header">
-      <span class="label">Портфоліо</span>
+<!-- ══ PROJECTS ══ -->
+<section id="projects" class="sec shell">
+  <div class="sec__head">
+    <div>
+      <p class="kicker">Портфоліо</p>
       <h2 class="h2">Реалізовані проєкти</h2>
-      <p class="section-header__sub">Кожен проєкт — унікальне рішення для конкретного простору</p>
     </div>
-    <div class="projects__filter" id="projectsFilter">
-      <button class="filter-btn active" data-filter="all">Всі</button>
-      <button class="filter-btn" data-filter="apartment">Квартири</button>
-      <button class="filter-btn" data-filter="house">Будинки</button>
-      <button class="filter-btn" data-filter="commercial">Комерційні</button>
-    </div>
-    <div class="projects__grid" id="projectsGrid">
-
-      <article class="project-card" data-category="apartment">
-        <div class="project-card__img">
-          <img src="proj-lukyanivka.jpg" alt="Проєкт Лук'янівка" onerror="this.parentElement.classList.add('img-placeholder')" />
-          <div class="project-card__hover">
-            <span>Переглянути</span>
-          </div>
-        </div>
-        <div class="project-card__info">
-          <span class="project-card__tag">Квартира</span>
-          <h3>Лук'янівка, Київ</h3>
-          <p>Класичний стиль, портьєри з оксамиту</p>
-        </div>
-      </article>
-
-      <article class="project-card" data-category="apartment">
-        <div class="project-card__img">
-          <img src="proj-comfort-town.jpg" alt="Проєкт Comfort Town" onerror="this.parentElement.classList.add('img-placeholder')" />
-          <div class="project-card__hover">
-            <span>Переглянути</span>
-          </div>
-        </div>
-        <div class="project-card__info">
-          <span class="project-card__tag">Квартира</span>
-          <h3>Comfort Town, Київ</h3>
-          <p>Сучасний мінімалізм, ролети блекаут</p>
-        </div>
-      </article>
-
-      <article class="project-card" data-category="apartment">
-        <div class="project-card__img">
-          <img src="proj-smart.jpg" alt="Смарт-квартира" onerror="this.parentElement.classList.add('img-placeholder')" />
-          <div class="project-card__hover">
-            <span>Переглянути</span>
-          </div>
-        </div>
-        <div class="project-card__info">
-          <span class="project-card__tag">Квартира</span>
-          <h3>Смарт-квартира, Київ</h3>
-          <p>Зонування текстилем, римські штори</p>
-        </div>
-      </article>
-
-      <article class="project-card" data-category="house">
-        <div class="project-card__img">
-          <img src="proj-myla.jpg" alt="Будинок с. Мила" onerror="this.parentElement.classList.add('img-placeholder')" />
-          <div class="project-card__hover">
-            <span>Переглянути</span>
-          </div>
-        </div>
-        <div class="project-card__info">
-          <span class="project-card__tag">Будинок</span>
-          <h3>с. Мила, Київська обл.</h3>
-          <p>Приватний будинок, портьєри на підлогу</p>
-        </div>
-      </article>
-
-      <article class="project-card" data-category="commercial">
-        <div class="project-card__img">
-          <img src="proj-cafe.jpg" alt="Кафе Крюківщина" onerror="this.parentElement.classList.add('img-placeholder')" />
-          <div class="project-card__hover">
-            <span>Переглянути</span>
-          </div>
-        </div>
-        <div class="project-card__info">
-          <span class="project-card__tag">Кафе</span>
-          <h3>Кафе, Крюківщина</h3>
-          <p>Комерційний проєкт, текстиль для зонування</p>
-        </div>
-      </article>
-
-      <article class="project-card" data-category="house">
-        <div class="project-card__img">
-          <img src="proj-irpin.jpg" alt="Ірпінь, прованс" onerror="this.parentElement.classList.add('img-placeholder')" />
-          <div class="project-card__hover">
-            <span>Переглянути</span>
-          </div>
-        </div>
-        <div class="project-card__info">
-          <span class="project-card__tag">Будинок</span>
-          <h3>Ірпінь</h3>
-          <p>Прованс-стиль, мереживний тюль, тиле-вишивка</p>
-        </div>
-      </article>
-
-    </div>
+    <p class="sec__note">Кожен проєкт — унікальне рішення для конкретного простору.</p>
   </div>
-</section>
-
-<!-- ─── REVIEWS ─── -->
-<section class="reviews section" id="reviews">
-  <div class="container">
-    <div class="section-header">
-      <span class="label">Відгуки</span>
-      <h2 class="h2">Що кажуть клієнти</h2>
-    </div>
-    <div class="reviews__track-wrap">
-      <div class="reviews__track" id="reviewsTrack">
-
-        <article class="review-card">
-          <div class="review-card__stars">★★★★★</div>
-          <p class="review-card__text">«Еліна — справжній майстер своєї справи. Допомогла підібрати штори для вітальні так, що вся кімната заграла по-новому. Рекомендую від душі!»</p>
-          <div class="review-card__author">
-            <div class="review-card__avatar">О</div>
-            <div>
-              <strong>Олена К.</strong>
-              <span>Лук'янівка, Київ</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="review-card">
-          <div class="review-card__stars">★★★★★</div>
-          <p class="review-card__text">«Замовляли римські штори для кухні та спальні. Все пошито акуратно, монтаж зробили швидко й чисто. Дуже задоволені результатом!»</p>
-          <div class="review-card__author">
-            <div class="review-card__avatar">М</div>
-            <div>
-              <strong>Марина і Віктор</strong>
-              <span>Comfort Town, Київ</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="review-card">
-          <div class="review-card__stars">★★★★★</div>
-          <p class="review-card__text">«Оформлювали кафе — результат перевершив очікування. Еліна врахувала всі наші побажання та пропонувала рішення, про які ми й не думали.»</p>
-          <div class="review-card__author">
-            <div class="review-card__avatar">Т</div>
-            <div>
-              <strong>Тетяна Р.</strong>
-              <span>Власниця кафе, Крюківщина</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="review-card">
-          <div class="review-card__stars">★★★★★</div>
-          <p class="review-card__text">«В будинку зробили повне оформлення вікон — це було 8 кімнат. Еліна впоралася ідеально, все в строк та у бюджеті. Будемо звертатися ще!»</p>
-          <div class="review-card__author">
-            <div class="review-card__avatar">С</div>
-            <div>
-              <strong>Сергій Н.</strong>
-              <span>с. Мила, Київська обл.</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="review-card">
-          <div class="review-card__stars">★★★★★</div>
-          <p class="review-card__text">«Купили в Еліни картину — texture painting. Вона стала справжньою окрасою нашої вітальні. Дуже рекомендую авторські роботи!»</p>
-          <div class="review-card__author">
-            <div class="review-card__avatar">І</div>
-            <div>
-              <strong>Інна Д.</strong>
-              <span>Київ</span>
-            </div>
-          </div>
-        </article>
-
+  <div class="prj">
+    <div class="prj__preview">
+      <div class="prj__frame">
+        <img src="proj-lukyanivka.jpg" alt="Офіс, Лук'янівка" id="prjImg" />
       </div>
-      <div class="reviews__controls">
-        <button class="reviews__btn" id="reviewsPrev" aria-label="Попередній">←</button>
-        <div class="reviews__dots" id="reviewsDots"></div>
-        <button class="reviews__btn" id="reviewsNext" aria-label="Наступний">→</button>
+      <div class="prj__cap">
+        <span id="prjTitle">Лук'янівка, Київ</span>
+        <span id="prjTag">Офіс</span>
+      </div>
+    </div>
+    <div class="prj__list" id="prjList">
+      <div class="prj__item is-active" data-img="proj-lukyanivka.jpg" data-title="Лук'янівка, Київ" data-tag="Офіс">
+        <span class="prj__n">01</span>
+        <div><h3>Лук'янівка, Київ</h3><p>Комерційний проєкт, темні портьєри, лофт-стиль</p></div>
+        <span class="prj__tag"><i class="dot"></i>Офіс</span>
+      </div>
+      <div class="prj__item" data-img="proj-comfort-town.jpg" data-title="Comfort Town, Київ" data-tag="Квартира">
+        <span class="prj__n">02</span>
+        <div><h3>Comfort Town, Київ</h3><p>Сучасний мінімалізм, ролети блекаут</p></div>
+        <span class="prj__tag"><i class="dot"></i>Квартира</span>
+      </div>
+      <div class="prj__item" data-img="proj-smart.jpg" data-title="Смарт-квартира, Київ" data-tag="Квартира">
+        <span class="prj__n">03</span>
+        <div><h3>Смарт-квартира, Київ</h3><p>Зонування текстилем, римські штори</p></div>
+        <span class="prj__tag"><i class="dot"></i>Квартира</span>
+      </div>
+      <div class="prj__item" data-img="proj-myla.jpg" data-title="с. Мила, Київська обл." data-tag="Будинок">
+        <span class="prj__n">04</span>
+        <div><h3>с. Мила, Київська обл.</h3><p>Приватний будинок, портьєри в підлогу</p></div>
+        <span class="prj__tag"><i class="dot"></i>Будинок</span>
+      </div>
+      <div class="prj__item" data-img="proj-cafe.jpg" data-title="Кафе, Крюківщина" data-tag="Кафе">
+        <span class="prj__n">05</span>
+        <div><h3>Кафе, Крюківщина</h3><p>Комерційний проєкт, текстиль для зонування</p></div>
+        <span class="prj__tag"><i class="dot"></i>Кафе</span>
+      </div>
+      <div class="prj__item" data-img="proj-irpin.jpg" data-title="Ірпінь" data-tag="Будинок">
+        <span class="prj__n">06</span>
+        <div><h3>Ірпінь</h3><p>Прованс, мереживний тюль, тюль-вишивка</p></div>
+        <span class="prj__tag"><i class="dot"></i>Будинок</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── CTA BAND ─── -->
-<section class="cta-band">
-  <div class="container cta-band__inner">
-    <div class="cta-band__text">
-      <h2>Готові перетворити ваш простір?</h2>
-      <p>Запишіться на безкоштовну консультацію в шоурумі або онлайн</p>
+<!-- ══ REVIEWS ══ -->
+<section id="reviews" class="sec sec--rail">
+  <div class="shell">
+    <div class="sec__head">
+      <div>
+        <p class="kicker">Відгуки</p>
+        <h2 class="h2">Що кажуть клієнти</h2>
+      </div>
+      <div class="rail__ctrl">
+        <button id="railPrev" aria-label="Назад">←</button>
+        <button id="railNext" aria-label="Вперед">→</button>
+      </div>
     </div>
-    <div class="cta-band__actions">
-      <a href="tel:+380972483922" class="btn btn--primary">Зателефонувати</a>
-      <a href="https://www.instagram.com/elina.decor.art" target="_blank" rel="noopener" class="btn btn--ghost-dark">Instagram</a>
+  </div>
+  <div class="rail" id="rail">
+    <figure class="rev">
+      <div class="rev__stars">★★★★★</div>
+      <blockquote>«Еліна — справжній майстер. Допомогла підібрати штори для вітальні так, що вся кімната заграла по-новому».</blockquote>
+      <figcaption><span class="rev__ini">О</span><span><b>Олена К.</b><i>Лук'янівка, Київ</i></span></figcaption>
+    </figure>
+    <figure class="rev">
+      <div class="rev__stars">★★★★★</div>
+      <blockquote>«Замовляли римські штори для кухні та спальні. Все пошито акуратно, монтаж швидкий і чистий».</blockquote>
+      <figcaption><span class="rev__ini">М</span><span><b>Марина і Віктор</b><i>Comfort Town, Київ</i></span></figcaption>
+    </figure>
+    <figure class="rev">
+      <div class="rev__stars">★★★★★</div>
+      <blockquote>«Оформлювали кафе — результат перевершив очікування. Були рішення, про які ми й не думали».</blockquote>
+      <figcaption><span class="rev__ini">Т</span><span><b>Тетяна Р.</b><i>Власниця кафе, Крюківщина</i></span></figcaption>
+    </figure>
+    <figure class="rev">
+      <div class="rev__stars">★★★★★</div>
+      <blockquote>«У будинку зробили повне оформлення вікон — 8 кімнат. Усе в строк і в бюджеті».</blockquote>
+      <figcaption><span class="rev__ini">С</span><span><b>Сергій Н.</b><i>с. Мила, Київська обл.</i></span></figcaption>
+    </figure>
+    <figure class="rev">
+      <div class="rev__stars">★★★★★</div>
+      <blockquote>«Купили картину — texture painting. Вона стала окрасою нашої вітальні».</blockquote>
+      <figcaption><span class="rev__ini">І</span><span><b>Інна Д.</b><i>Київ</i></span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<section class="sec shell">
+  <div class="cta">
+    <h2 class="h2">Готові перетворити ваш простір?</h2>
+    <div>
+      <p>Безкоштовна консультація в шоурумі в Осокорках або онлайн.</p>
+      <div class="cta__acts">
+        <a href="tel:+380972483922" class="btn btn--solid">Зателефонувати</a>
+        <a href="https://www.instagram.com/elina.decor.art" target="_blank" rel="noopener" class="btn btn--out">Instagram</a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ─── CONTACT ─── -->
-<section class="contact section" id="contact">
-  <div class="container">
-    <div class="section-header">
-      <span class="label">Зв'язатися</span>
-      <h2 class="h2">Де нас знайти</h2>
-      <p class="section-header__sub">Завітайте до шоуруму або зателефонуйте — з радістю проконсультуємо</p>
-    </div>
-    <ul class="contact__list contact__list--center">
-      <li>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <div>
-          <strong>Шоурум та цех</strong>
-          <span>вул. Здолбунівська, 7г<br/>Київ, Дарницький район, Осокорки</span>
-        </div>
-      </li>
-      <li>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.12 6.12l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        <div>
-          <strong>Телефон</strong>
+<!-- ══ CONTACT ══ -->
+<section id="contact" class="sec shell">
+  <div class="ct ct--center">
+    <p class="kicker">Зв'язатися</p>
+    <h2 class="h2">Де нас знайти</h2>
+    <dl class="ct__dl">
+      <div><dt>Шоурум та цех</dt><dd>вул. Здолбунівська, 7г<br />Київ, Дарницький район, Осокорки</dd></div>
+      <div><dt>Телефон</dt><dd><a href="tel:+380972483922">+38 097 248 39 22</a></dd></div>
+      <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/elina.decor.art" target="_blank" rel="noopener">@elina.decor.art</a></dd></div>
+      <div><dt>Години роботи</dt><dd>Пн–Пт 09:00–18:00<br /><span class="muted">Сб — за домовленістю</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer class="ftr">
+  <div class="shell">
+    <div class="ftr__top">
+      <div>
+        <div class="ftr__logo">Elina Decor Art</div>
+        <p>Авторське оформлення вікон. Власний цех у Києві. 20+ років досвіду.</p>
+      </div>
+      <div>
+        <div class="ftr__k">Навігація</div>
+        <nav class="ftr__nav">
+          <a href="#categories">Колекції</a><a href="#services">Послуги</a>
+          <a href="#projects">Проєкти</a><a href="#reviews">Відгуки</a><a href="#contact">Контакти</a>
+        </nav>
+      </div>
+      <div>
+        <div class="ftr__k">Контакти</div>
+        <div class="ftr__nav">
           <a href="tel:+380972483922">+38 097 248 39 22</a>
-        </div>
-      </li>
-      <li>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
-        <div>
-          <strong>Instagram</strong>
           <a href="https://www.instagram.com/elina.decor.art" target="_blank" rel="noopener">@elina.decor.art</a>
+          <span>Київ, Осокорки</span>
         </div>
-      </li>
-      <li>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        <div>
-          <strong>Години роботи</strong>
-          <span>Пн–Пт 09:00–18:00<br/>Сб за домовленістю</span>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<!-- ─── FOOTER ─── -->
-<footer class="footer">
-  <div class="container footer__inner">
-    <div class="footer__brand">
-      <a href="#" class="logo">
-        <span class="logo__name">Elina Decor Art</span>
-        <span class="logo__tagline">Авторське оформлення вікон</span>
-      </a>
-      <p>Власний цех у Києві. 20+ років досвіду.</p>
+      </div>
     </div>
-    <nav class="footer__nav">
-      <h4>Навігація</h4>
-      <ul>
-        <li><a href="#categories">Колекції</a></li>
-        <li><a href="#services">Послуги</a></li>
-        <li><a href="#projects">Проєкти</a></li>
-        <li><a href="#reviews">Відгуки</a></li>
-        <li><a href="#contact">Контакти</a></li>
-      </ul>
-    </nav>
-    <div class="footer__social">
-      <h4>Соціальні мережі</h4>
-      <a href="https://www.instagram.com/elina.decor.art" target="_blank" rel="noopener" class="footer__ig">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
-        @elina.decor.art
-      </a>
-    </div>
-  </div>
-  <div class="footer__bottom">
-    <div class="container">
-      <p>© 2024 Elina Decor Art. Всі права захищені.</p>
-    </div>
+    <div class="ftr__bot"><span>© 2026 Elina Decor Art</span><span>Київ · Україна</span></div>
   </div>
 </footer>
 
