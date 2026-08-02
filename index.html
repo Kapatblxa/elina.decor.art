@@ -3,69 +3,269 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Elina Decor Art — Авторське оформлення вікон у Києві</title>
-<meta name="description" content="Авторське оформлення вікон. 20+ років досвіду. Карнизи, тканини, аксесуари, ролети. Власний цех у Києві, Осокорки." />
-<meta name="keywords" content="штори Київ, карнизи, ролети, тканини, оформлення вікон, пошив штор, римські штори" />
+<title>Пошив штор на замовлення в Києві — Elina Decor Art</title>
+<meta name="description" content="Авторське оформлення вікон у Києві: пошив штор, римські штори, ролети, карнизи, тканини. Власний цех на Осокорках, 20+ років досвіду. Консультація та прорахунок безкоштовні." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="style.css" />
+<link rel="preload" as="image" href="hero.jpg" fetchpriority="high" />
 
 <!-- Canonical & icons -->
 <link rel="canonical" href="https://elinadecor.kyiv.ua/" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="theme-color" content="#f3f3f2" />
-<meta name="robots" content="index, follow" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="author" content="Elina Decor Art" />
+<meta name="geo.region" content="UA-30" />
+<meta name="geo.placename" content="Київ" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="uk_UA" />
 <meta property="og:site_name" content="Elina Decor Art" />
 <meta property="og:url" content="https://elinadecor.kyiv.ua/" />
-<meta property="og:title" content="Elina Decor Art — Авторське оформлення вікон у Києві" />
-<meta property="og:description" content="Штори, римські штори, ролети, карнизи та авторський текстиль. Власний цех у Києві. 20+ років досвіду." />
+<meta property="og:title" content="Пошив штор на замовлення в Києві — Elina Decor Art" />
+<meta property="og:description" content="Авторське оформлення вікон у Києві: пошив штор, римські штори, ролети, карнизи, тканини. Власний цех на Осокорках, 20+ років досвіду. Консультація та прорахунок безкоштовні." />
 <meta property="og:image" content="https://elinadecor.kyiv.ua/hero.jpg" />
-<meta property="og:image:alt" content="Авторське оформлення вікон від Elina Decor Art" />
+<meta property="og:image:alt" content="Штори та портьєри у вітальні — робота студії Elina Decor Art" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Elina Decor Art — Авторське оформлення вікон у Києві" />
-<meta name="twitter:description" content="Штори, римські штори, ролети, карнизи та авторський текстиль. Власний цех у Києві. 20+ років досвіду." />
+<meta name="twitter:title" content="Пошив штор на замовлення в Києві — Elina Decor Art" />
+<meta name="twitter:description" content="Авторське оформлення вікон у Києві: пошив штор, римські штори, ролети, карнизи, тканини. Власний цех на Осокорках, 20+ років досвіду. Консультація та прорахунок безкоштовні." />
 <meta name="twitter:image" content="https://elinadecor.kyiv.ua/hero.jpg" />
 
-<!-- Local business structured data -->
+<!-- Structured data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "HomeGoodsStore",
-  "name": "Elina Decor Art",
-  "description": "Авторське оформлення вікон: штори, римські штори, ролети, карнизи, тканини та авторський живопис. Власний цех у Києві.",
-  "url": "https://elinadecor.kyiv.ua/",
-  "image": "https://elinadecor.kyiv.ua/hero.jpg",
-  "telephone": "+380972483922",
-  "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "вул. Здолбунівська, 7г",
-    "addressLocality": "Київ",
-    "addressRegion": "Київська область",
-    "addressCountry": "UA"
-  },
-  "areaServed": { "@type": "City", "name": "Київ" },
-  "sameAs": ["https://www.instagram.com/elina.decor.art"],
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-    "opens": "09:00",
-    "closes": "18:00"
-  }],
-  "makesOffer": [
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Текстильне оформлення інтер'єру" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Пошив штор на власному виробництві" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Навішування штор і монтаж карнизів" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Підбір тканин і аксесуарів" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Зонування простору текстилем" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Авторські картини Texture Paintings" } }
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "HomeGoodsStore"
+      ],
+      "@id": "https://elinadecor.kyiv.ua/#business",
+      "name": "Elina Decor Art",
+      "alternateName": "Еліна Декор Арт",
+      "description": "Студія авторського оформлення вікон у Києві. Пошив штор, римських штор і ролет на власному виробництві, карнизи, тканини, зонування простору текстилем та авторський живопис. Понад 20 років досвіду.",
+      "url": "https://elinadecor.kyiv.ua/",
+      "image": "https://elinadecor.kyiv.ua/hero.jpg",
+      "logo": "https://elinadecor.kyiv.ua/favicon.svg",
+      "telephone": "+380972483922",
+      "priceRange": "$$",
+      "currenciesAccepted": "UAH",
+      "foundingDate": "2003",
+      "slogan": "Простір, що надихає",
+      "knowsLanguage": [
+        "uk",
+        "ru"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "вул. Здолбунівська, 7г",
+        "addressLocality": "Київ",
+        "addressRegion": "Київська область",
+        "postalCode": "02068",
+        "addressCountry": "UA"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Київ"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Київська область"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/elina.decor.art"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Послуги Elina Decor Art",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Текстильне оформлення інтер'єру",
+              "description": "Комплексне оформлення квартир, будинків і закладів — від концепції до реалізації."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Пошив штор на замовлення",
+              "description": "Виготовлення штор, тюлю та портьєр на власному виробництві в Києві."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Пошив римських штор",
+              "description": "Римські штори в стилі прованс, лофт і мінімалізм за індивідуальними розмірами."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ролети та рулонні штори",
+              "description": "Рулонні штори будь-якого формату, зокрема блекаут."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Монтаж карнизів і навішування штор",
+              "description": "Встановлення карнизів SCARLAYN, TOP-LINE, дерев'яних і металевих моделей."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Підбір тканин і аксесуарів",
+              "description": "Консультація в шоурумі або на об'єкті: шеніль, блекаут, льон, принти, дитячі тканини."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Зонування простору текстилем",
+              "description": "Поділ простору за допомогою штор і тканин без зведення перегородок."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Авторські картини Texture Paintings",
+              "description": "Унікальні фактурні живописні роботи для інтер'єру."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://elinadecor.kyiv.ua/#website",
+      "url": "https://elinadecor.kyiv.ua/",
+      "name": "Elina Decor Art",
+      "inLanguage": "uk-UA",
+      "publisher": {
+        "@id": "https://elinadecor.kyiv.ua/#business"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://elinadecor.kyiv.ua/#webpage",
+      "url": "https://elinadecor.kyiv.ua/",
+      "name": "Пошив штор на замовлення в Києві — Elina Decor Art",
+      "description": "Авторське оформлення вікон у Києві: пошив штор, римські штори, ролети, карнизи, тканини. Власний цех на Осокорках, 20+ років досвіду. Консультація та прорахунок безкоштовні.",
+      "inLanguage": "uk-UA",
+      "isPartOf": {
+        "@id": "https://elinadecor.kyiv.ua/#website"
+      },
+      "about": {
+        "@id": "https://elinadecor.kyiv.ua/#business"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://elinadecor.kyiv.ua/hero.jpg"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://elinadecor.kyiv.ua/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Які види штор виготовляє Elina Decor Art?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ми шиємо класичні штори, тюль і портьєри, римські штори в стилі прованс, лофт та мінімалізм, а також виготовляємо ролети (рулонні штори), зокрема блекаут. Додатково підбираємо й встановлюємо карнизи SCARLAYN, TOP-LINE, дерев'яні та металеві."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Де знаходиться шоурум і цех Elina Decor Art?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Шоурум і власний швейний цех розташовані за адресою вул. Здолбунівська, 7г, Київ — Дарницький район, житловий масив Осокорки. Працюємо з понеділка до п'ятниці з 09:00 до 18:00, у суботу — за домовленістю."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Скільки коштує пошив штор на замовлення?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Вартість залежить від тканини, розміру вікна, типу кріплення та складності моделі, тому фіксованого прайсу немає. Консультація та прорахунок безкоштовні — точну суму називаємо після заміру й вибору тканини."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чи виїжджаєте ви на заміри та монтаж?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Так. Консультацію проводимо як у шоурумі, так і на об'єкті замовника. Ми також виконуємо монтаж карнизів і навішування готових штор із дотриманням технічних норм."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "У яких районах ви працюєте?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Працюємо в Києві та Київській області. Серед реалізованих проєктів — квартири на Лук'янівці, у Comfort Town і смарт-квартири в Києві, приватні будинки в с. Мила та Ірпені, кафе в Крюківщині."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Скільки часу займає виготовлення штор?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Термін залежить від обсягу замовлення, складності моделі та наявності обраної тканини. Оскільки пошив відбувається на власному виробництві, ми контролюємо кожен етап і узгоджуємо конкретну дату готовності разом із прорахунком."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "З якими стилями інтер'єру ви працюєте?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ми оформлюємо інтер'єри в класичному стилі, сучасному мінімалізмі, провансі та лофті. Підбираємо тканини під конкретний стиль: шеніль, блекаут, натуральні фактури, принти та дитячі тканини."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Що таке зонування простору текстилем?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Це поділ приміщення на функціональні зони за допомогою штор і тканин замість зведення стін чи перегородок. Рішення підходить для студій, смарт-квартир і закладів, де потрібно зберегти світло та можливість швидко змінити планування."
+          }
+        }
+      ]
+    }
   ]
 }
 </script>
@@ -85,11 +285,14 @@
       <a href="#services">Послуги</a>
       <a href="#projects">Проєкти</a>
       <a href="#reviews">Відгуки</a>
+      <a href="#faq">Питання</a>
     </nav>
     <a href="#contact" class="btn btn--out hdr__cta">Консультація <span>→</span></a>
     <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
   </div>
 </header>
+
+<main>
 
 <!-- ══ HERO ══ -->
 <section id="top" class="hero">
@@ -111,9 +314,9 @@
     </div>
   </div>
   <div class="hero__strip">
-    <img src="hero.jpg" alt="Елегантні штори у вітальні" />
-    <img src="cat-roman.jpg" alt="Римські штори" />
-    <img src="cat-fabric.jpg" alt="Тканини" />
+    <img src="hero.jpg" alt="Портьєри та тюль у вітальні київської квартири — оформлення вікон Elina Decor Art" width="3060" height="4080" fetchpriority="high" decoding="async" />
+    <img src="cat-roman.jpg" alt="Римські штори із зеленої тканини на двох вікнах" width="1080" height="2340" fetchpriority="high" decoding="async" />
+    <img src="cat-fabric.jpg" alt="Зразки тканин для штор: шеніль, блекаут і натуральні фактури" width="4080" height="3060" fetchpriority="high" decoding="async" />
   </div>
 </section>
 
@@ -135,7 +338,7 @@
     </div>
   </div>
   <div class="quote-block">
-    <img src="about.jpg" alt="Шоурум Elina Decor Art" />
+    <img src="about.jpg" alt="Шоурум і швейний цех Elina Decor Art на Осокорках у Києві" width="3060" height="4080" loading="lazy" decoding="async" />
     <figure class="quote-block__txt">
       <p class="kicker">Шоурум · Осокорки</p>
       <blockquote>«Вікно — це рама, крізь яку дім дивиться на світ. Наша робота — зробити цю раму гідною».</blockquote>
@@ -155,32 +358,32 @@
   </div>
   <div class="cats">
     <a href="#contact" class="cat">
-      <span class="cat__media"><img src="cat-shtory.jpg" alt="Штори" /></span>
+      <span class="cat__media"><img src="cat-shtory.jpg" alt="Штори на замовлення: портьєри та тюль у вітальні" width="4080" height="3060" loading="lazy" decoding="async" /></span>
       <span class="cat__row"><h3>Штори</h3><span class="cat__n">01</span></span>
       <p>Тюль · Портьєри · Класика · Сучасний стиль</p>
     </a>
     <a href="#contact" class="cat">
-      <span class="cat__media"><img src="cat-roman.jpg" alt="Римські штори" /></span>
+      <span class="cat__media"><img src="cat-roman.jpg" alt="Римські штори із зеленої тканини на двох вікнах" width="1080" height="2340" loading="lazy" decoding="async" /></span>
       <span class="cat__row"><h3>Римські штори</h3><span class="cat__n">02</span></span>
       <p>Прованс · Лофт · Мінімалізм</p>
     </a>
     <a href="#contact" class="cat">
-      <span class="cat__media"><img src="cat-rolety.jpg" alt="Ролети" /></span>
+      <span class="cat__media"><img src="cat-rolety.jpg" alt="Рулонна штора (ролета) на вікні у ванній кімнаті" width="4080" height="3060" loading="lazy" decoding="async" /></span>
       <span class="cat__row"><h3>Ролети</h3><span class="cat__n">03</span></span>
       <p>Рулонні штори будь-якого формату</p>
     </a>
     <a href="#contact" class="cat">
-      <span class="cat__media"><img src="cat-fabric.jpg" alt="Тканини" /></span>
+      <span class="cat__media"><img src="cat-fabric.jpg" alt="Зразки тканин для штор: шеніль, блекаут і натуральні фактури" width="4080" height="3060" loading="lazy" decoding="async" /></span>
       <span class="cat__row"><h3>Тканини</h3><span class="cat__n">04</span></span>
       <p>Принти · Шеніль · Блекаут · Натуральні · Дитячі</p>
     </a>
     <a href="#contact" class="cat">
-      <span class="cat__media"><img src="cat-karnyz.jpg" alt="Карнизи" /></span>
+      <span class="cat__media"><img src="cat-karnyz.jpg" alt="Карнизи для штор — металеві та дерев'яні моделі" width="4080" height="3060" loading="lazy" decoding="async" /></span>
       <span class="cat__row"><h3>Карнизи</h3><span class="cat__n">05</span></span>
       <p>SCARLAYN · TOP-LINE · Дерев'яні · Металеві</p>
     </a>
     <a href="#contact" class="cat">
-      <span class="cat__media"><img src="cat-paintings.jpg" alt="Картини" /></span>
+      <span class="cat__media"><img src="cat-paintings.jpg" alt="Авторська фактурна картина texture painting в інтер'єрі" loading="lazy" decoding="async" /></span>
       <span class="cat__row"><h3>Картини</h3><span class="cat__n">06</span></span>
       <p>Авторський живопис · Texture paintings</p>
     </a>
@@ -234,7 +437,7 @@
   <div class="prj">
     <div class="prj__preview">
       <div class="prj__frame">
-        <img src="proj-lukyanivka.jpg" alt="Офіс, Лук'янівка" id="prjImg" />
+        <img src="proj-lukyanivka.jpg" alt="Оформлення офісу на Лук'янівці в Києві — темні портьєри в стилі лофт" width="3060" height="4080" loading="lazy" decoding="async" id="prjImg" />
       </div>
       <div class="prj__cap">
         <span id="prjTitle">Лук'янівка, Київ</span>
@@ -319,6 +522,52 @@
   </div>
 </section>
 
+<!-- ══ FAQ ══ -->
+<section id="faq" class="sec shell">
+  <div class="svc">
+    <aside class="svc__aside">
+      <p class="kicker">Питання та відповіді</p>
+      <h2 class="h2">Часті запитання</h2>
+      <p class="svc__note">Не знайшли відповідь? Зателефонуйте — проконсультуємо за кілька хвилин.</p>
+      <a href="tel:+380972483922" class="btn btn--out faq__cta">+38 097 248 39 22</a>
+    </aside>
+    <div class="faq">
+      <details class="faq__item" open>
+        <summary><h3>Які види штор виготовляє Elina Decor Art?</h3></summary>
+        <p>Ми шиємо класичні штори, тюль і портьєри, римські штори в стилі прованс, лофт та мінімалізм, а також виготовляємо ролети (рулонні штори), зокрема блекаут. Додатково підбираємо й встановлюємо карнизи SCARLAYN, TOP-LINE, дерев'яні та металеві.</p>
+      </details>
+      <details class="faq__item">
+        <summary><h3>Де знаходиться шоурум і цех?</h3></summary>
+        <p>Шоурум і власний швейний цех розташовані за адресою вул. Здолбунівська, 7г, Київ — Дарницький район, житловий масив Осокорки. Працюємо з понеділка до п'ятниці з 09:00 до 18:00, у суботу — за домовленістю.</p>
+      </details>
+      <details class="faq__item">
+        <summary><h3>Скільки коштує пошив штор на замовлення?</h3></summary>
+        <p>Вартість залежить від тканини, розміру вікна, типу кріплення та складності моделі, тому фіксованого прайсу немає. Консультація та прорахунок безкоштовні — точну суму називаємо після заміру й вибору тканини.</p>
+      </details>
+      <details class="faq__item">
+        <summary><h3>Чи виїжджаєте ви на заміри та монтаж?</h3></summary>
+        <p>Так. Консультацію проводимо як у шоурумі, так і на об'єкті замовника. Ми також виконуємо монтаж карнизів і навішування готових штор із дотриманням технічних норм.</p>
+      </details>
+      <details class="faq__item">
+        <summary><h3>У яких районах ви працюєте?</h3></summary>
+        <p>Працюємо в Києві та Київській області. Серед реалізованих проєктів — квартири на Лук'янівці, у Comfort Town і смарт-квартири в Києві, приватні будинки в с. Мила та Ірпені, кафе в Крюківщині.</p>
+      </details>
+      <details class="faq__item">
+        <summary><h3>Скільки часу займає виготовлення?</h3></summary>
+        <p>Термін залежить від обсягу замовлення, складності моделі та наявності обраної тканини. Оскільки пошив відбувається на власному виробництві, ми контролюємо кожен етап і узгоджуємо конкретну дату готовності разом із прорахунком.</p>
+      </details>
+      <details class="faq__item">
+        <summary><h3>З якими стилями інтер'єру ви працюєте?</h3></summary>
+        <p>Ми оформлюємо інтер'єри в класичному стилі, сучасному мінімалізмі, провансі та лофті. Підбираємо тканини під конкретний стиль: шеніль, блекаут, натуральні фактури, принти та дитячі тканини.</p>
+      </details>
+      <details class="faq__item">
+        <summary><h3>Що таке зонування простору текстилем?</h3></summary>
+        <p>Це поділ приміщення на функціональні зони за допомогою штор і тканин замість зведення стін чи перегородок. Рішення підходить для студій, смарт-квартир і закладів, де потрібно зберегти світло та можливість швидко змінити планування.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
 <!-- ══ CTA ══ -->
 <section class="sec shell">
   <div class="cta">
@@ -347,6 +596,8 @@
   </div>
 </section>
 
+</main>
+
 <!-- ══ FOOTER ══ -->
 <footer class="ftr">
   <div class="shell">
@@ -359,7 +610,7 @@
         <div class="ftr__k">Навігація</div>
         <nav class="ftr__nav">
           <a href="#categories">Колекції</a><a href="#services">Послуги</a>
-          <a href="#projects">Проєкти</a><a href="#reviews">Відгуки</a><a href="#contact">Контакти</a>
+          <a href="#projects">Проєкти</a><a href="#reviews">Відгуки</a><a href="#faq">Питання</a><a href="#contact">Контакти</a>
         </nav>
       </div>
       <div>
@@ -375,6 +626,6 @@
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="main.js" defer></script>
 </body>
 </html>
