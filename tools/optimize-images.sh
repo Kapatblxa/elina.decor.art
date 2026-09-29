@@ -12,6 +12,10 @@
 # Usage:  bash tools/optimize-images.sh
 #
 # Commit the result afterwards — the visual output is unchanged at display size.
+#
+# Already applied to every photo in the repo root (1800 px long side, EXIF
+# orientation baked in, metadata stripped). Re-running recompresses them again,
+# so only run it on newly added originals.
 
 set -euo pipefail
 cd "$(dirname "$0")/.."
